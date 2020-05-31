@@ -30,6 +30,8 @@ gem 'jbuilder', '2.7.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#アプリ名変更
+gem 'rename'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
