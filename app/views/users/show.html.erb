@@ -1,1 +1,17 @@
 <h1>ユーザ確認画面</h1>
+<%= link_to "ユーザ編集", 'users/edit' %>
+<%= link_to "戻る", :users%>
+
+<table>
+
+  <tr>
+    <th>一人目</th>
+    <td><%= @user.name %></td>
+  </tr>
+
+  <tr>
+    <th>二人目</th>
+    <td><%= @user2.name %></td>
+  </tr>
+
+</table>
