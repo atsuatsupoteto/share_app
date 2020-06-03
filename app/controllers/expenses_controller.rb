@@ -1,6 +1,7 @@
 class ExpensesController < ApplicationController
 
   def index
+    @user=all
   end
 
   def show
@@ -9,6 +10,7 @@ class ExpensesController < ApplicationController
   end
 
   def new
+    @user = User.new
   end
 
   def edit
