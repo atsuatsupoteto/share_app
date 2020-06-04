@@ -20,14 +20,6 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-#production:
-#  <<: *default
-#  database: db/production.sqlite3
-
-  production:
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  database: アプリ名_production
-  username: アプリ名
-  password:<%= ENV['大文字アプリ名_DATABASE_PASSWORD'] %>
+production:
+  <<: *default
+  database: db/production.sqlite3
