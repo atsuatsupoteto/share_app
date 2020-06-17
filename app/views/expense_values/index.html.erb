@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+<body>
+  <h1>支払登録画面</h1>
+  <div class="container">
+      <div>
+        <% require "date" %>
+        <% date = Date.today %>
+        <%= date.year %>年
+        <%= date.month %>月
+      </div>
+      <div>
+        <%= @user1.name %>
+        <%= @user2.name %>
+      </div>
+      <table border="1">
+        <tr>
+          <th>支出科目</th>
+          <th>金額</th>
+          <th>支出科目</th>
+          <th>金額</th>
+        </tr>
+        <tr>
+          <td>家賃１</td>
+          <td> <%= @values.find(1).expense_value %></td>
+          <td>家賃２</td>
+          <td> <%= @values.find(2).expense_value %></td>
+        </tr>
+        <tr>
+          <td>水道１</td>
+          <td> <%= @values.find(3).expense_value %></td>
+          <td>水道２</td>
+          <td> <%= @values.find(4).expense_value %></td>
+        </tr>
+        <tr>
+          <td>ガス１</td>
+          <td> <%= @values.find(5).expense_value %></td>
+          <td>ガス２</td>
+          <td> <%= @values.find(6).expense_value %></td>
+        </tr>
+        <tr>
+          <td>電気１</td>
+          <td> <%= @values.find(7).expense_value %></td>
+          <td>電気２</td>
+          <td> <%= @values.find(8).expense_value %></td>
+        </tr>
+        <tr>
+          <td>ネット１</td>
+          <td> <%= @values.find(9).expense_value %></td>
+          <td>ネット２</td>
+          <td> <%= @values.find(10).expense_value %></td>
+        </tr>
+        <tr>
+          <td>食費１</td>
+          <td> <%= @values.find(11).expense_value %></td>
+          <td>食費２</td>
+          <td> <%= @values.find(12).expense_value %></td>
+        </tr>
+        <tr>
+          <td>消耗品１</td>
+          <td> <%= @values.find(13).expense_value %></td>
+          <td>消耗品２</td>
+          <td> <%= @values.find(14).expense_value %></td>
+        </tr>
+        <tr>
+          <td>その他１</td>
+          <td> <%= @values.find(15).expense_value %></td>
+          <td>その他２</td>
+          <td> <%= @values.find(16).expense_value %></td>
+        </tr>
+      </table>
+    </div>
+</body>
+</html>
